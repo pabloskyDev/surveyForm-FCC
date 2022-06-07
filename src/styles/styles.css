@@ -1,9 +1,9 @@
 *,
 *::after,
 *::before {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
 }
 
 body {
@@ -35,13 +35,16 @@ header {
 #title {
   margin-top: 30px;
   line-height: 1.2;
+  font-weight: 300;
 }
   
 #title, 
 #description {
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #f3f3f3;
 }
 
 #description {
@@ -65,7 +68,16 @@ form {
 fieldset {
   position: inherit;
   padding: 5px;
+  margin-bottom: 10px;
   border: 0px;
+}
+
+.form-group {
+  margin: 0px auto 25px;
+}
+
+label {
+  vertical-align: middle;
 }
   
 label, input, select {
@@ -74,19 +86,24 @@ label, input, select {
   font-family: inherit;
   font-size: 1.125rem;
   font-style: inherit;
-  margin-bottom: 10px;
+  margin: 0px auto;
   border: 0px;
 }
 
-/*input, select, textarea:focus {
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
-}*/
-  
-input, select {
+input, select, textarea {
   padding: 7px;
   border-radius: 5px;
+  margin: 5px 0px;
+}
+
+input, select, textarea:focus {
+  border: 1px solid #80bdff;
+  /* outline: 0; */
+  /* box-shadow: 0 0 0 0.2rem rgb(0 123 255); */
+}
+
+select {
+  color: #495057;
 }
   
 input[type="submit"] {
@@ -101,20 +118,16 @@ input[type="submit"] {
   color: inherit;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
   display: inline-flex;
-  width: 50px;
-}
-
-input[type="checkbox"] {
-  display: inline-flex;
-  width: 50px;
+  width: 20px;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
 }
 
 textarea {
   width: 98%;
-  padding: 5px;
-  border-radius: 2px;
   font-size: 1.065rem;
 }
 
