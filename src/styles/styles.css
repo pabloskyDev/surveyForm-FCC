@@ -8,14 +8,14 @@
 
 body {
   height: 100%;
-  width: 98%;
-  z-index: -2;
+  width: 96%;
+  z-index: -1;
   padding: 10px;
-  background-color: rgba(58, 58, 158, 0.8)  ;
-  /* background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
+  background: #3a158e;
+  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #f5f6f7;
   font-family: 'Popins', sans-serif;
   font-size: 1rem;
@@ -23,46 +23,103 @@ body {
   line-height: 1.4;
   overflow-y: auto;
 }
-  
-h1 {
+
+header {
+  max-width: 700px;
+  min-width: 300px;
+  padding: 0 0.625rem;
+  margin: 1.875rem auto;
+  text-align: center;
+}
+
+#title {
   margin-top: 30px;
+  line-height: 1.2;
 }
   
-h1, 
-p {
+#title, 
+#description {
   text-align: center;
-  margin: 0px auto 10px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+#description {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 200;
 }
   
 form {
-  width: 60vw;
-  max-width: 500px;
+  width: 80vw;
+  max-width: 700px;
   min-width: 300px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 50px;
   padding-bottom: 2em;
-  background-color: #003366;
-  opacity: 0.5;
+  background-color: #1b1b32cc;
   z-index: -1;
+  border-radius: 5px;
+}
+
+fieldset {
+  position: inherit;
+  padding: 5px;
+  border: 0px;
 }
   
-  label, input, select {
-    display: block;
-    width: 100%;
-  }
+label, input, select {
+  display: block;
+  width: 98%;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-style: inherit;
+  margin-bottom: 10px;
+  border: 0px;
+}
+
+/*input, select, textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}*/
   
-  input, select {
-    padding: 5px;
-    border-radius: 5px;
-  }
+input, select {
+  padding: 7px;
+  border-radius: 5px;
+}
   
 input[type="submit"] {
-    width: 100%;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: green;
-    border-radius: 5px;
-    border: 1px solid green;
+  width: 100%;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #37af65;
+  border-radius: 5px;
+  border: 1px solid #37af65;
+  color: inherit;
+}
+
+input[type="radio"] {
+  display: inline-flex;
+  width: 50px;
+}
+
+input[type="checkbox"] {
+  display: inline-flex;
+  width: 50px;
+}
+
+textarea {
+  width: 98%;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 1.065rem;
+}
+
+footer {
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 0px;
 }
