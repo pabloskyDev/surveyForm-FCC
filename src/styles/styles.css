@@ -73,7 +73,7 @@ fieldset {
 }
 
 .form-group {
-  margin: 0px auto 25px;
+  margin: 10px auto 25px;
 }
 
 label {
@@ -96,14 +96,23 @@ input, select, textarea {
   margin: 5px 0px;
 }
 
-input, select, textarea:focus {
-  border: 1px solid #80bdff;
-  /* outline: 0; */
-  /* box-shadow: 0 0 0 0.2rem rgb(0 123 255); */
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255/ 25%);
 }
 
 select {
   color: #495057;
+}
+
+select:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255/ 25%);
+}
+
+textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255/ 25%);
 }
   
 input[type="submit"] {
